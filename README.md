@@ -1,6 +1,6 @@
 # red
 
-## Installation
+## Installation ##
 
 Use your plugin manager of choice.
 
