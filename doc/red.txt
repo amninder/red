@@ -1,0 +1,27 @@
+*red.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                                  *red*
+
+    1. Intro ...................................................... |red-intro|
+    2. Requirements ........................................ |red-requirements|
+    3. Usage ...................................................... |red-usage|
+    4. Licence .................................................. |red-licence|
+===============================================================================
+1. Intro                                                            *red-intro*
+
+Overview of plugin
+
+2. Requirements                                              *red-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                            *red-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                                        *red-licence*
+
+This is open source make sure to include a licence
+
+vim:ft=help
