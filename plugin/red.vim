@@ -9,13 +9,12 @@ python sys.path.append(vim.eval('expand("<sfile>:h")'))
 " --------------------------------
 "  Function(s)
 " --------------------------------
-function! TemplateExample()
+function! GetGitAlias()
 python << endOfPython
 
-from red import red_example
+from red import get_alias
 
-for n in range(5):
-    print(red_example())
+print get_alias()
 
 endOfPython
 endfunction
@@ -23,4 +22,4 @@ endfunction
 " --------------------------------
 "  Expose our commands to the user
 " --------------------------------
-command! Example call TemplateExample()
+command! GetGitAlias call GetGitAlias()
