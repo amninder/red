@@ -1,4 +1,4 @@
-# red
+# Red
 
 ## Installation ##
 
