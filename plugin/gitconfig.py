@@ -107,8 +107,17 @@ class GitConfig(MutableMapping):
                          for a in filter(lambda x: x, [level.split('.')
                                                        for level in levels])]))
 
+    def _has_number_in_string(self, val):
+        """This method find if there is any digit present in the string.
+        Args:
+            val(str): String value
+        Returns:
+            Boollean: True or False"""
+        return any(char.isdigit() for char in val)
+
     def get_level_mapping(self, alias_only=True):
-        """This method return alias or all the level options from .gitconfig file.
+        """This method return alias or all the level options from .gitconfig
+        file. It doesn't return any alias with takes command line parameters.
 
         Args:
             only_alias(bool): level to fetch mappin from
@@ -125,11 +134,11 @@ class GitConfig(MutableMapping):
         levels = super(GitConfig, self).keys()
         if alias_only:
             return [a.split('.')[1] for a in levels
-                    if a.split('.')[0] == self.level]
+                    if a.split('.')[0] == self.level and
+                    not self._has_number_in_string(self.get(a))]
         else:
             conf_mapping = {}
             for level in self.keys():
                 conf_mapping[level] = [a.split('.')[1] for a in levels
                                        if a.split('.')[0] == level]
-            print('this')
             return conf_mapping
