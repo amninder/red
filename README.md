@@ -1,4 +1,8 @@
-# Red
+# Red #
+------
+Red is Git utility tool for using all custom aliases in Vim. It requires [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive).
+* Maps all the aliases in `.gitconfig` to Leader.
+* Runs on top of Fugitive.
 
 ## Installation ##
 
@@ -16,7 +20,7 @@ Use your plugin manager of choice.
   - Add `Plug 'https://github.com/amninder/red'` to .vimrc
   - Run `:PlugInstall`
 
-## Todo
-
-1. Write a plugin
-2. Write documentation
+## Usage ##
+```vim
+<Leader>g{alias} :Git {alias} <CR>
+```
