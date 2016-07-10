@@ -1,4 +1,4 @@
-# Red #
+# Red (Under development)#
 ------
 Red is Git utility tool for using all custom aliases in Vim. It requires [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive).
 * Maps all the aliases in `.gitconfig` to Leader.
