@@ -22,5 +22,5 @@ Use your plugin manager of choice.
 
 ## Usage ##
 ```vim
-<Leader>g{alias> :Git {alias} <CR>
+<Leader>g{alias} :Git {alias} <CR>
 ```
